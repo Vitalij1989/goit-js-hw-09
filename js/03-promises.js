@@ -1,4 +1,4 @@
-import { Notify } from 'notiflix';
+import {Notify} from 'notiflix';
 
 const form = document.querySelector(`.form`);
 
