@@ -3,14 +3,14 @@ const start = document.querySelector(`[data-start]`);
 const stop = document.querySelector(`[data-stop]`);
 
 const DELAY_TO_NEW_COLOR = 1000;
-let timerColor = null;
+let timerColor = null
 
 console.log(start);
 
-start.addEventListener('click', onBodyStart);
+start.addEventListener(`click`, OnBodyStart);
 stop.addEventListener('click', onBodyStop);
 
-function onBodyStart() {
+function OnBodyStart() {
   start.disabled = true;
 
   timerColor = setInterval(() => {
@@ -26,5 +26,5 @@ function onBodyStop() {
 }
 
 function getRandomHexColor() {
-  return '#${Math.floor(Math.random() * 16777215).toString(16)}';
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
