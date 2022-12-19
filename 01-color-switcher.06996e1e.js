@@ -1,0 +1,2 @@
+!function(){var o=document.querySelector("body"),e=document.querySelector("[data-start]"),t=document.querySelector("[data-stop]"),n=null;console.log(e),e.addEventListener("click",(function(){e.disabled=!0,n=setInterval((function(){o.style.background="#".concat(Math.floor(16777215*Math.random()).toString(16)),console.log("Now we change color")}),1e3)})),t.addEventListener("click",(function(){clearInterval(n),console.log("Colors not change"),e.disabled=!1}))}();
+//# sourceMappingURL=01-color-switcher.06996e1e.js.map
